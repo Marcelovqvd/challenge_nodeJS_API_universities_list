@@ -1,6 +1,6 @@
-import { Router } from 'express';
+import express from 'express';
 
-const universitiesRoutes = Router();
+const universitiesRoutes = express.Router();
 
 universitiesRoutes.post("/creatuniversity", (request, response) => {
   const {codeCountry, url, name, country, domains, state } = request.body;
